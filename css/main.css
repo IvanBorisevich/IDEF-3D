@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow: hidden;
+}
+
+#add-item {
+	background-color: #0B2161;
+	color: white;
+	border-color: #0B2161;
+	border-radius: 10px;
+}
+
+#add-item:hover {
+	background-color: #3104B4;
+	border-color: #3104B4;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Script Tutorials" />
+    <title>WebGL With Three.js - Lesson 10 - Drag and Drop Objects | Script Tutorials</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <style>
+      #coupontooltip {
+          display: none;
+          background: #210B61;
+          color: white;
+          font-weight: bold;
+          padding: 2px 7px 2px 7px;
+          margin-left: 10px;
+          margin-top: 15px;
+          position: absolute;
+          border-radius: 5px;
+          z-index: 1;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";       /* IE 8 */
+          filter: alpha(opacity=70);  /* IE 5-7 */
+          -moz-opacity: 0.7;          /* Netscape */
+          -khtml-opacity: 0.7;        /* Safari 1.x */
+          opacity: 0.7;               
+      }
+
+    </style>
+  </head>
+  <body>
+    <script src="threejs/three.min.71.js"></script>
+    <script src="threejs/THREEx.WindowResize.js"></script>
+    <script src="threejs/OrbitControls.js"></script>
+    <script src="threejs/Detector.js"></script>
+    <script src="threejs/stats.min.js"></script>
+    
+    <div id="idef-panel" style="position: absolute; top: 10px; left: 20px; text-align: center; z-index: 1">
+        <button id="add-item" type="button" class="btn">
+          <span class="glyphicon glyphicon-plus"></span> 
+          ADD IDEF FUNCTION
+        </button>
+        <button id="clear-all" type="button" class="btn btn-danger">
+          CLEAR ALL
+        </button>
+    </div>
+
+    <div id="coupontooltip"></div>
+
+    <div id="#idef-area">
+
+    </div>
+  </body>
+
+  <script src="js/script.js"></script>
+</html>
